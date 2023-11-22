@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="app">
+        <div class="container">
+            <div id="message" class="text-center"></div>
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <div class="text-center">
+                            <form id="search_form" autocomplete="off">
+                                <p>
+                                    <input type="text" name="search" id="search_field">
+                                    <button type="submit">
+                                        <img src="/img/marker.png" width="20" alt="">
+                                    </button>
+                                </p>
+                            </form>
+                            <ul id="city_selector"></ul>
+                            <div id="country" class="f19 pt10 data"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <div class="text-center">
+                            <div id="last_updated" class="f17 data"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="content">
+                        <div class="text-center">
+                            <div id="localtime" class="f17 data"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="grid grid-2">
+                        <div class="content">
+                            <div class="text-center">
+                                <div id="condition-icon" class="data"></div>
+                                <div id="condition-text" class="f22 data"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="text-center">
+                                <div id="temp_c" class="f45 data"></div>
+                                <div id="temp_f" class="f19 data"></div>
+                                <div id="feelslike_c" class="f22 data"></div>
+                                <div id="feelslike_f" class="f19 data"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="grid grid-2">                    
+                        <div class="content">
+                            <div class="text-center">
+                                <div id="wind_kph" class="f19 data"></div>
+                                <div id="wind_degree" class="data"></div>                                
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="text-center">
+                                <div id="gust_kph" class="f19 data"></div>
+                                <div id="wind_dir" class="f19 data"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-2">
+                        <div class="content">
+                            <div class="text-center">
+                                <div id="pressure_mb" class="f22 data"></div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="text-center">
+                                <div id="humidity" class="f22 data"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <ul id="forecast"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
